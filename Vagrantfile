@@ -33,6 +33,17 @@ Vagrant.configure("2") do |config|
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
 
+  config.vm.define :aptcache do |aptcache|
+    aptcache.vm.provision :puppet do |puppet|
+      puppet.manifests_path = 'puppet/manifests'
+      puppet.module_path    = 'puppet/modules'
+      puppet.manifest_file  = 'aptcache.pp'
+      puppet.options        = [ '--verbose' ]
+    end
+
+    aptcache.vm.network :forwarded_port, :guest => 3142, :host => 3142
+  end
+
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:

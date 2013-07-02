@@ -1,0 +1,30 @@
+{
+  "author": "eirc",
+  "source": "UNKNOWN",
+  "types": [
+
+  ],
+  "project_page": "https://github.com/eirc/aptcacher",
+  "description": "Uses the apt-cacher package.",
+  "summary": "Install and manage an apt cacher server via puppet",
+  "dependencies": [
+
+  ],
+  "name": "eirc-aptcacher",
+  "version": "0.0.4",
+  "checksums": {
+    "files/apt-cacher.conf": "3346886b2a85b2d820780afd022b3de5",
+    "manifests/params.pp": "4b9425a866b0d12e2ad490cc33bbff56",
+    "Modulefile": "bd1e50d128311305f009c653a0b659e0",
+    "manifests/service.pp": "3478bd6be982d68eceefd16970f08dc3",
+    "tests/init.pp": "b0d9a341a66d1342f078367cb2ef136d",
+    "manifests/conf.pp": "d1c484636b8590991651120ac2a2e765",
+    "manifests/install.pp": "876dfb09d8301bbba22f3af3c9fada14",
+    "manifests/client.pp": "4f79e110de7bc537e75d047fe7bb249a",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "manifests/init.pp": "1f2edadf5f8cca5f8e2014f3504f42d7",
+    "manifests/config.pp": "1feba53676f45f5b69560aa0939d6917",
+    "README.md": "6a554fc7fb12860b2ae79c537cb109f4"
+  },
+  "license": "Apache License, Version 2.0"
+}

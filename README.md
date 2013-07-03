@@ -9,4 +9,5 @@ To use just [install Vagrant](http://docs.vagrantup.com/v2/installation/index.ht
 
 Current available VMs:
 
+* util - Various utilities machine
 * aptcache - Provides caching for apt-get packages in other debian machines

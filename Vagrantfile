@@ -41,7 +41,7 @@ Vagrant.configure("2") do |config|
       puppet.options        = [ '--verbose' ]
     end
 
-    aptcache.vm.network :forwarded_port, :guest => 3142, :host => 3142
+    aptcache.vm.network :private_network, :ip => '10.10.10.6'
   end
 
   # Provider-specific configuration so you can fine-tune various

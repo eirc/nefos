@@ -53,6 +53,7 @@ Vagrant.configure("2") do |config|
       puppet.options        = [ '--verbose' ]
     end
 
+    aptcache.vm.hostname = 'aptcache'
     aptcache.vm.network :private_network, :ip => '10.10.10.6'
   end
 

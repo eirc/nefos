@@ -3,7 +3,7 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = 'debian-7.1.0-amd64-netboot'
-  config.vm.box_url = 'https://dl.dropboxusercontent.com/u/6705768/debian-7.1.0-amd64-netboot.box'
+  config.vm.box_url = 'https://dl.dropboxusercontent.com/u/6705768/boxes/debian-7.1.0-amd64-netboot.box'
 
   config.vm.define :util do |dev|
     dev.vm.provision :puppet do |puppet|

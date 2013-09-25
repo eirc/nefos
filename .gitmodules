@@ -4,3 +4,6 @@
 [submodule "puppet/modules/single_user_rvm"]
 	path = puppet/modules/single_user_rvm
 	url = git@github.com:eirc/puppet-single_user_rvm.git
+[submodule "puppet/modules/interfaces"]
+	path = puppet/modules/interfaces
+	url = git@github.com:eirc/puppet-interfaces.git

@@ -2,6 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure('2') do |config|
+  # Setup common debian 7.1 box for all machines
   config.vm.box = 'debian-7.1.0-amd64-netboot'
   config.vm.box_url = 'https://dl.dropboxusercontent.com/u/6705768/boxes/debian-7.1.0-amd64-netboot.box'
 

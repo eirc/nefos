@@ -1,5 +1,8 @@
-import 'nodes/*.pp'
+node default {
+  include nefos
+}
 
-# Require an apt-get update for all package declarations
-exec { 'apt-get update': path => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin' }
-Exec['apt-get update'] -> Package <| |>
+
+node 'aptcacher' inherits default {
+  include nefos::aptcacher
+}

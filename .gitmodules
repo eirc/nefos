@@ -7,3 +7,6 @@
 [submodule "puppet/modules/interfaces"]
 	path = puppet/modules/interfaces
 	url = git@github.com:eirc/puppet-interfaces.git
+[submodule "puppet/modules/account"]
+	path = puppet/modules/account
+	url = git@github.com:eirc/puppet-account.git

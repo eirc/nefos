@@ -13,6 +13,10 @@ Vagrant.configure('2') do |config|
     puppet.options        = [ '--verbose --graph --graphdir /vagrant/graphs' ]
   end
 
+  config.vm.define :dev do |box|
+    box.vm.hostname = 'dev'
+  end
+
   config.vm.define :aptcacher do |box|
     box.vm.hostname = 'aptcacher'
   end

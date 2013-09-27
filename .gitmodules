@@ -10,3 +10,6 @@
 [submodule "puppet/modules/account"]
 	path = puppet/modules/account
 	url = git@github.com:eirc/puppet-account.git
+[submodule "puppet/modules/teamcity_agent"]
+	path = puppet/modules/teamcity_agent
+	url = git@github.com:eirc/puppet-teamcity_agent.git

@@ -7,5 +7,5 @@ node 'dev' inherits default {
 }
 
 node 'aptcacher' inherits default {
-  include nefos::aptcacher
+  include aptcacher
 }

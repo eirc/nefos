@@ -21,4 +21,7 @@ class nefos {
   if ! defined(Package['patch'])           { package { 'patch':           ensure => present } }
   if ! defined(Package['bzip2'])           { package { 'bzip2':           ensure => present } }
   if ! defined(Package['sed'])             { package { 'sed':             ensure => present } }
+
+  # A common motd
+  include nefos::motd
 }

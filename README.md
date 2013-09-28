@@ -1,5 +1,10 @@
-nefos
-=====
+````
+               ____
+   ____  ___  / __/___  _____
+  / __ \/ _ \/ /_/ __ \/ ___/
+ / / / /  __/ __/ /_/ (__  )
+/_/ /_/\___/_/  \____/____/  a cloud @ github.com/eirc/nefos
+````
 
 My automated cloud. This project uses [Vagrant](http://www.vagrantup.com/) and [Puppet](http://puppetlabs.com/)
 to spawn VMs and set them up to do various dev common things.

@@ -3,7 +3,7 @@ class nefos {
   exec { 'apt-get update': path => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin' }
   Exec['apt-get update'] -> Package <| |>
 
-  # Install common packages to all servers
+  # Install common packages to all machines
   if ! defined(Package['dnsutils'])        { package { 'dnsutils':        ensure => present } }
   if ! defined(Package['screen'])          { package { 'screen':          ensure => present } }
   if ! defined(Package['less'])            { package { 'less':            ensure => present } }

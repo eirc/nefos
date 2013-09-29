@@ -20,7 +20,4 @@ class nefos::common {
 
   # A common motd
   include nefos::motd
-
-  # Add ntp to all machines
-  include '::ntp'
 }

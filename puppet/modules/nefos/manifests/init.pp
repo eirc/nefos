@@ -3,4 +3,5 @@ class nefos {
   include nefos::common
   include nefos::users
   include nefos::apt_get_update
+  include ::ntp
 }

@@ -1,4 +1,4 @@
-class nefos::common {
+class nefos::common_packages {
   # Install common packages to all machines
   if ! defined(Package['dnsutils'])        { package { 'dnsutils':        ensure => present } }
   if ! defined(Package['screen'])          { package { 'screen':          ensure => present } }

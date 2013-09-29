@@ -1,8 +1,4 @@
 class nefos::common {
-  # Require an apt-get update for all package declarations
-  exec { 'apt-get update': path => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin' }
-  Exec['apt-get update'] -> Package <| |>
-
   # Install common packages to all machines
   if ! defined(Package['dnsutils'])        { package { 'dnsutils':        ensure => present } }
   if ! defined(Package['screen'])          { package { 'screen':          ensure => present } }
